@@ -24,12 +24,20 @@ const students = [
 
 
 //metodo for()
-for (let i = 0; i < students.length; i++){
+/*for (let i = 0; i < students.length; i++){
   const student = students[1]
   console.log(student);
   break
+}*/
+
+for (let i = 0; i < students.length; i++){
+  const studente = students[i]
+  if (studente.id === 2){
+    const infoStudent = students[i]
+    console.log(infoStudent);
+  } 
 }
 
 //metodo find()
-const student = students.find(alumn => (alumn == students[1]))
-console.log(student);
+const clasStudent = students.find(alumn => (alumn.id === 2))
+console.log(clasStudent);
